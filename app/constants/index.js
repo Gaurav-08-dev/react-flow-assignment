@@ -6,13 +6,13 @@ export const initialNode = [
     position: { x: 0, y: 0 },
     data: { label: "Text Node" },
     position: { x: 250, y: 5 },
-    type:'textnode'
+    type:'Text Node'
   },
 ];
 
 export const nodeTypesList = [
   {
     nodeName:"Message Node",
-    nodeType:"textnode",
+    nodeType:"Text Node",
   },
 ]

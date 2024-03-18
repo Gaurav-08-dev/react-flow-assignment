@@ -7,11 +7,13 @@ const Sidebar = ({
   selectedNode,
   setSelectedElements,
 }) => {
+  
   const handleDragStart = (e, nodeType) => {
     e.dataTransfer.setData("application/reactflow", nodeType);
     e.dataTransfer.effectAllowed = "move";
   };
 
+  
   const handleInputChange = (e) => {
     setNodeName(e.target.value);
   };

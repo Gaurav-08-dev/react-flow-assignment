@@ -1,9 +1,7 @@
 import React from "react";
 import { Handle, Position } from "reactflow";
 
-
 function TextNode({ data, selected }) {
-  
   return (
     <div
       className={`w-40  shadow-md rounded-md bg-white   ${
@@ -12,7 +10,7 @@ function TextNode({ data, selected }) {
     >
       <div className="flex flex-col">
         <div className="max-h-max px-2 py-1 text-left text-black text-xs font-bold rounded-t-md bg-teal-300">
-          ✉️ send message
+          ✉️ Send Message
         </div>
         <div className="px-3 py-2 ">
           <div className="text-xs font-normal text-black">
