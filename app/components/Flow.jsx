@@ -30,7 +30,7 @@ function Flow({
 }) {
   const nodeTypes = useMemo(
     () => ({
-      'Text Node': TextNode,
+      "Text Node": TextNode,
     }),
     []
   );
@@ -197,7 +197,7 @@ function Flow({
       onPaneClick={handleOnPaneClick}
       nodeTypes={nodeTypes}
     >
-      <Background variant="" gap={12} size={1} />
+      <Background variant="dots" gap={12} size={1} />
       <Controls />
       <MiniMap zoomable pannable />
       <Panel>
