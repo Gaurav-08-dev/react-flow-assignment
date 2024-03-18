@@ -10,6 +10,7 @@ import ReactFlow, {
   useEdgesState,
   useNodesState,
   useReactFlow,
+  MarkerType
 } from "reactflow";
 import "../tailwind.config";
 import "reactflow/dist/style.css";
@@ -17,7 +18,7 @@ import Sidebar from "./components/Sidebar";
 import { useCallback, useMemo, useState, useEffect } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { flowKey } from "./constants";
+import { flowKey } from "./constants";  
 import { initialNode } from "./constants";
 import { getId } from "./utils";
 import TextNode from "./components/Textnode";
@@ -70,7 +71,9 @@ function Home() {
 
   const handleEdgeConnect = useCallback(
     (e) => {
-      setEdges((edge) => addEdge(e, edge));
+      setEdges((edge) => addEdge({...e,markerEnd: {
+        type: MarkerType.Arrow,
+      }}, edge));
     },
     [setEdges]
   );
