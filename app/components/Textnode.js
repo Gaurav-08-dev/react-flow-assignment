@@ -9,7 +9,7 @@ function TextNode({ data, selected }) {
       } `}
     >
       <div className="flex flex-col">
-        <div className="max-h-max px-2 py-1 text-left text-black text-xs font-bold rounded-t-md bg-teal-300">
+        <div className="max-h-max px-2 py-1 text-left text-black text-xs font-bold rounded-t-md bg-blue-300">
           ✉️ Send Message
         </div>
         <div className="px-3 py-2 ">

@@ -201,10 +201,10 @@ function Flow({
       <Controls />
       <MiniMap zoomable pannable />
       <Panel>
-        <button className="m-2 button" onClick={saveFlow}>
+        <button className="m-2 button " onClick={saveFlow}>
           Save Flow
         </button>
-        <button className="button" onClick={handleRestoreFlow}>
+        <button className="button " onClick={handleRestoreFlow}>
           Restore Flow
         </button>
       </Panel>
